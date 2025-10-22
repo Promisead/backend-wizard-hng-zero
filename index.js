@@ -9,6 +9,7 @@ app.get('/me', async (req, res) => {
     const catResponse = await axios.get('https://catfact.ninja/fact', { timeout: 5000 });
     const catFact = catResponse.data.fact;
 
+    
     const response = {
       status: "success",
       user: {
